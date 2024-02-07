@@ -27,7 +27,7 @@ public class ServletCont extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	private ProductoDTO lista;
     //Establecer el DataSource
-	@Resource(name="jdbc/Productos")
+	@Resource(name="jdbc/Producto")
 	private DataSource pc;
 	
 	@Override

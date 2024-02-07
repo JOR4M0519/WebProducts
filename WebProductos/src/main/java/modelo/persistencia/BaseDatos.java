@@ -139,8 +139,9 @@ public class BaseDatos {
 	  Connection conexion = null;
 	  PreparedStatement ps = null;
 	  try {
-		 conexion=datos.getConnection(); 
-		 String isql = "DELETE FROM PRODUCTOS WHERE CODIGO=?";
+		 conexion=datos.getConnection();
+		 // String isql = "DELETE FROM PRODUCTOS WHERE CODIGO=?";
+		 String isql = "DELETE FROM PRODUCTO WHERE cArt=?";
 		 ps = conexion.prepareStatement(isql);
 		 ps.setString(1,codart);
 		 ps.execute();
